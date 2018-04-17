@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" cache="true" prefHeight="400.0" prefWidth="602.0" style="-fx-background-color: grey; -fx-background-radius: 20;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller=".FXML_GamePageController">
+    <stylesheets>
+        <URL value="@fxml_gamepage.css" />
+    </stylesheets>
+   <children>
+      <Button fx:id="firstnumb" layoutX="76.0" layoutY="156.0" mnemonicParsing="false" prefHeight="88.0" prefWidth="96.0" style="-fx-background-color: lightgreen; -fx-background-radius: 80; -fx-font-family: Futura;" text="20">
+         <font>
+            <Font size="16.0" />
+         </font></Button>
+      <Button fx:id="secondnumb" layoutX="428.0" layoutY="157.0" mnemonicParsing="false" onAction="#secondChoosen" prefHeight="88.0" prefWidth="96.0" style="-fx-background-color: lightgreen; -fx-background-radius: 80; -fx-font-family: Futura;" text="12">
+         <font>
+            <Font size="16.0" />
+         </font></Button>
+      <Label fx:id="gamenumber" alignment="CENTER" layoutX="230.0" layoutY="164.0" prefHeight="75.0" prefWidth="142.0" style="-fx-background-color: lightblue; -fx-background-radius: 80; -fx-font-family: Futura; -fx-border-color: WHITE; -fx-border-radius: 80;" text="30" textAlignment="CENTER">
+         <font>
+            <Font size="16.0" />
+         </font></Label>
+      <Label layoutX="248.0" layoutY="29.0" style="-fx-text-fill: white;" text="SCORE:">
+         <font>
+            <Font name="Futura Bold" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="324.0" layoutY="29.0" prefHeight="23.0" prefWidth="31.0" style="-fx-text-fill: white;" text=" 10">
+         <font>
+            <Font name="Futura Bold" size="17.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

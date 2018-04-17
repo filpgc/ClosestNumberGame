@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" cache="true" prefHeight="400.0" prefWidth="602.0" style="-fx-background-color: #ffe45e;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="littlegame.FXML_PageGameController">
+    <stylesheets>
+        <URL value="@fxml_gamepage.css" />
+    </stylesheets>
+   <children>
+      <Button fx:id="firstnumb" layoutX="76.0" layoutY="156.0" mnemonicParsing="false" onAction="#firstChoosen" prefHeight="88.0" prefWidth="96.0" style="-fx-background-color: lightgreen; -fx-background-radius: 80; -fx-font-family: Futura; -fx-border-color: white; -fx-border-radius: 80;" text="20">
+         <font>
+            <Font size="15.0" />
+         </font></Button>
+      <Button fx:id="secondnumb" layoutX="428.0" layoutY="157.0" mnemonicParsing="false" onAction="#secondChoosen" prefHeight="88.0" prefWidth="96.0" style="-fx-background-color: lightgreen; -fx-background-radius: 80; -fx-font-family: Futura; -fx-border-color: WHITE; -fx-border-radius: 80;" text="12">
+         <font>
+            <Font size="15.0" />
+         </font></Button>
+      <Label fx:id="gamenumber" alignment="CENTER" layoutX="230.0" layoutY="160.0" prefHeight="81.0" prefWidth="142.0" style="-fx-background-color: lightblue; -fx-background-radius: 80; -fx-font-family: Futura; -fx-border-color: WHITE; -fx-border-radius: 80;" text="30" textAlignment="CENTER">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Label layoutX="256.0" layoutY="29.0" style="-fx-text-fill: #252a3c;" text="SCORE:">
+         <font>
+            <Font name="Futura Bold" size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="scoretext" layoutX="325.0" layoutY="29.0" prefHeight="23.0" prefWidth="174.0" style="-fx-text-fill: #252a3c;" text="0">
+         <font>
+            <Font name="Futura Bold" size="17.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="43.0" fitWidth="41.0" layoutX="14.0" layoutY="16.0" preserveRatio="true">
+         <image>
+            <Image url="@../images/icons8-make_decision.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="comment" alignment="CENTER" contentDisplay="CENTER" layoutX="284.0" layoutY="304.0" textFill="#3c525e">
+         <font>
+            <Font name="Lucida Sans Typewriter Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="timerlabel" layoutX="539.0" layoutY="22.0" textFill="WHITE">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <AnchorPane fx:id="endgame" layoutX="65.0" layoutY="71.0" prefHeight="269.0" prefWidth="473.0" style="-fx-background-color: #252a3c; -fx-background-radius: 30;">
+         <children>
+            <Label layoutX="135.0" layoutY="98.0" text="TIME IS UP.. :(" textFill="WHITE">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="again_button" fitHeight="37.0" fitWidth="31.0" layoutX="278.0" layoutY="167.0" onMouseClicked="#tryAgain" preserveRatio="true">
+               <image>
+                  <Image url="@../images/icons8-recurring_appointment_filled.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="again" layoutX="170.0" layoutY="171.0" onMouseClicked="#tryAgain" text="TRY AGAIN" textFill="#ffe45e">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Label fx:id="label_time_up" layoutX="513.0" layoutY="29.0" text="+2" textFill="#ff6868">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Label fx:id="label_time_down" layoutX="578.0" layoutY="29.0" text="-2" textFill="#ff6868fa">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Label fx:id="comment1" alignment="CENTER" contentDisplay="CENTER" layoutX="70.0" layoutY="358.0" prefHeight="28.0" prefWidth="464.0" style="-fx-letter-spacing: 3;" text="SELECT THE CLOSEST NUMBER TO THE MIDDLE ONE" textFill="#3c525e">
+         <font>
+            <Font name="Lucida Sans Typewriter Bold" size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
